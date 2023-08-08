@@ -1,0 +1,4 @@
+.venv
+asyncout/*.txt
+
+.DS_Store
