@@ -21,13 +21,27 @@ import asyncio
 import time
 
 async def cook(food, t):
-    
+    print(f'{time.ctime()} - Microwave ({food}): Cooking {t} seconds...')
+    await asyncio.sleep(t)
+    print(f'{time.ctime()} - Microwave ({food}): finished cooking')
+    return f'{food} is completed'
 
 async def main():
-    
+    coros = [cook('Rice', 5), cook('Noodle', 3), cook('Curry', 1)]
+    result = await asyncio.gather(*coros)
+    print(f"{time.ctime()} - {result}")
 
 if __name__ == '__main__':
     t1 = time.time()
     asyncio.run(main())
     t2 = time.time() - t1
     print(f'Executed in {t2:0.2f} seconds.')
+
+# Wed Aug  9 14:49:27 2023 - Microwave (Rice): Cooking 5 seconds...
+# Wed Aug  9 14:49:27 2023 - Microwave (Noodle): Cooking 3 seconds...
+# Wed Aug  9 14:49:27 2023 - Microwave (Curry): Cooking 1 seconds...
+# Wed Aug  9 14:49:28 2023 - Microwave (Curry): finished cooking
+# Wed Aug  9 14:49:30 2023 - Microwave (Noodle): finished cooking
+# Wed Aug  9 14:49:32 2023 - Microwave (Rice): finished cooking
+# Wed Aug  9 14:49:32 2023 - ['Rice is completed', 'Noodle is completed', 'Curry is completed']
+# Executed in 5.00 seconds.
