@@ -2,7 +2,7 @@ import asyncio
 import asyncpg
 import time
 
-# Postgres database details:
+#Postgres database details:
 host = "localhost"
 db_name = "northwind"
 port = "55432"
