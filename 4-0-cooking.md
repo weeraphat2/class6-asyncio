@@ -49,7 +49,7 @@ async def FryEggsAsync(howMany):
     return Egg()
  ```
 
- The final two steps in the instruction is to toast each slice of the bread and apply butter on toast. These two steps are related but applying the butter can be done only after the bread is toasted. Therefore these two steps have to be performed sequentially but can be done in parallel with frying eggs..
+ The final two steps in the instruction is to toast each slice of the bread and apply butter on toast. These two steps are related but applying the butter can be done only after the bread is toasted. Therefore these two steps have to be performed sequentially but can be done in parallel with frying eggs.
 
  ```python
  async def ApplyButter():
