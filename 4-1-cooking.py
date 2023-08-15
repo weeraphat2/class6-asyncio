@@ -10,6 +10,7 @@ class Toast:
 
 def PourCoffee():
     print(f"{time.ctime()} - Pouring coffee")
+    print("Coffee is ready")
     return Coffee()
 
 async def ApplyButter():
@@ -47,17 +48,18 @@ if __name__ == "__main__":
     print(f"{time.ctime()} - Breakfast cooked in",elapsed,"seconds.")
 
 
-# Tue Aug 15 22:19:18 2023 - Pouring coffee
-# Tue Aug 15 22:19:18 2023- Coffee is ready
-# Tue Aug 15 22:19:18 2023 - Heat pan to fry eggs
-# Tue Aug 15 22:19:18 2023 - Toasting bread 1
-# Tue Aug 15 22:19:21 2023 - Frying 2 eggs
-# Tue Aug 15 22:19:21 2023 - Bread 1 toasted
-# Tue Aug 15 22:19:21 2023 - Spreading butter on toast
-# Tue Aug 15 22:19:22 2023 - Toast 1 ready
-# Tue Aug 15 22:19:22 2023 - Toasting bread 2
-# Tue Aug 15 22:19:24 2023 - Eggs are ready
-# Tue Aug 15 22:19:25 2023 - Bread 2 toasted
-# Tue Aug 15 22:19:25 2023 - Spreading butter on toast
-# Tue Aug 15 22:19:26 2023 - Toast 2 ready
-# Tue Aug 15 22:19:26 2023 - Breakfast cooked in 8.043516499998077 seconds.
+# Tue Aug 15 23:29:08 2023 - Pouring coffee
+# Coffee is ready
+# Tue Aug 15 23:29:08 2023- Coffee is ready
+# Tue Aug 15 23:29:08 2023 - Heat pan to fry eggs
+# Tue Aug 15 23:29:08 2023 - Toasting bread 1
+# Tue Aug 15 23:29:11 2023 - Frying 2 eggs
+# Tue Aug 15 23:29:11 2023 - Bread 1 toasted
+# Tue Aug 15 23:29:11 2023 - Spreading butter on toast
+# Tue Aug 15 23:29:12 2023 - Toast 1 ready
+# Tue Aug 15 23:29:12 2023 - Toasting bread 2
+# Tue Aug 15 23:29:14 2023 - Eggs are ready
+# Tue Aug 15 23:29:15 2023 - Bread 2 toasted
+# Tue Aug 15 23:29:15 2023 - Spreading butter on toast
+# Tue Aug 15 23:29:16 2023 - Toast 2 ready
+# Tue Aug 15 23:29:16 2023 - Breakfast cooked in 8.038570699998672 seconds.
